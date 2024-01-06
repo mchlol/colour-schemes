@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <header>
+        <h1>Colour Scheme Generator</h1>
+    </header>
+    <main class="container">
+        <form id="controls">
+            <input type="color" id="colour-picker" name="colour-picker">
+
+            <!-- <div class="select-wrap"> -->
+                <select name="modes" id="mode-select">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome dark</option>
+                    <option value="monochrome-light">Monochrome light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+            <!-- </div> -->
+            
+            <button aria-label="get colour scheme" id="submit-btn">Get colour scheme</button>
+        </form>
+        <div id="colour-grid">
+            <!-- 3, 4 or 5 colours -->
+            <!-- with label space below like so -->
+            <!-- | | | | | | -->
+            <!-- | | | | | | -->
+            <!-- ----------- -->
+            <!-- | | | | | | -->
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
