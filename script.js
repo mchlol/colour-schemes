@@ -18,6 +18,7 @@ async function getColours(hex, mode) {
     try {
         const response = await fetch(`${BASE_URL}/scheme?hex=${hex}&mode=${mode}`, options);
         const colours = await response.json();
+        // console.log(colours);
         displayColours(colours);
     } catch (err) {
         console.log('Error getting data', err)

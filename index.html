@@ -13,31 +13,24 @@
     </header>
     <main class="container">
         <form id="controls">
+
             <input type="color" id="colour-picker" name="colour-picker">
 
-            <!-- <div class="select-wrap"> -->
-                <select name="modes" id="mode-select">
-                    <option value="monochrome">Monochrome</option>
-                    <option value="monochrome-dark">Monochrome dark</option>
-                    <option value="monochrome-light">Monochrome light</option>
-                    <option value="analogic">Analogic</option>
-                    <option value="complement">Complement</option>
-                    <option value="analogic-complement">Analogic complement</option>
-                    <option value="triad">Triad</option>
-                    <option value="quad">Quad</option>
-                </select>
-            <!-- </div> -->
+            <select name="modes" id="mode-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome dark</option>
+                <option value="monochrome-light">Monochrome light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
             
             <button aria-label="get colour scheme" id="submit-btn">Get colour scheme</button>
+            
         </form>
-        <div id="colour-grid">
-            <!-- 3, 4 or 5 colours -->
-            <!-- with label space below like so -->
-            <!-- | | | | | | -->
-            <!-- | | | | | | -->
-            <!-- ----------- -->
-            <!-- | | | | | | -->
-        </div>
+        <div id="colour-grid"></div>
     </main>
 <script src="script.js"></script>
 </body>
